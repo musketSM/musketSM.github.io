@@ -300,7 +300,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #ffb217;
     padding: .5rem;
-    width: 30%;
+    width: 23%;
     transition: all .2s;
     white-space: nowrap; }
   .btn-text:hover {
@@ -858,6 +858,10 @@ body {
       .navigation__background {
         width: 50%;
         height: 100%; } }
+    @media only screen and (max-width: 36em) {
+      .navigation__background {
+        width: 100%;
+        height: 100%; } }
   .navigation__nav {
     height: 60%;
     width: 50%;
@@ -871,7 +875,10 @@ body {
     transition: opacity .8s ease; }
     @media only screen and (max-width: 62em) {
       .navigation__nav {
-        right: 120px; } }
+        right: 12rem; } }
+    @media only screen and (max-width: 36em) {
+      .navigation__nav {
+        right: 48rem; } }
   .navigation__logo {
     width: 26rem;
     padding: 2rem 2rem; }
