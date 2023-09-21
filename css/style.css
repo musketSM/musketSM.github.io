@@ -639,6 +639,7 @@ body {
     .footer__navigation-item {
       padding-bottom: .7rem; }
     .footer__navigation-link {
+      text-transform: capitalize;
       text-decoration: none;
       font-size: 1.5rem;
       color: #999; }
