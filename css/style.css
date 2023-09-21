@@ -437,7 +437,8 @@ body {
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
-    padding: 20rem 5rem 5rem; }
+    padding: 20rem 5rem 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
     @media only screen and (max-width: 48em) {
       .detail__image {
         width: 100%;
