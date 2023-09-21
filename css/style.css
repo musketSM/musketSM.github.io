@@ -158,8 +158,9 @@ body {
     color: #333; }
   .heading-tertiary--about {
     color: #333333;
-    font-size: 1.7rem;
-    margin-bottom: 2rem; }
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize; }
   .heading-tertiary--team {
     position: absolute;
     top: 7.5rem;
@@ -1034,9 +1035,11 @@ body {
       background-image: url("../img/business_development.jpg"); }
   .teammate__designation {
     color: #c1c1c1;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     text-transform: capitalize;
-    margin-top: -1rem; }
+    margin-top: -1rem;
+    text-transform: uppercase; }
   .teammate--one {
     border-top: 1px solid #999;
     padding-top: 7rem; }
