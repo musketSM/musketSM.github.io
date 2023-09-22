@@ -633,16 +633,17 @@ body {
   .footer__link {
     text-decoration: none;
     color: #999;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    text-transform: capitalize; }
   .footer__navigation {
     list-style: none; }
     .footer__navigation-item {
-      padding-bottom: .7rem; }
+      padding-bottom: .9rem; }
     .footer__navigation-link {
-      text-transform: capitalize;
       text-decoration: none;
       font-size: 1.5rem;
-      color: #999; }
+      color: #999;
+      text-transform: capitalize; }
   .footer__input {
     background-color: #151515;
     border: none;
