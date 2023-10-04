@@ -35,7 +35,7 @@ html {
 
 body {
   width: 100vw;
-  font-family: 'Camber', Helvetica, sans-serif;
+  font-family: 'Lora', serif;
   box-sizing: border-box;
   background-color: #f5f5f5; }
 
@@ -43,7 +43,8 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 3rem;
-  z-index: 1; }
+  z-index: 1;
+  font-family: 'Roboto', sans-serif; }
   .heading-primary--main {
     font-size: 5.5rem;
     letter-spacing: 2rem;
@@ -77,14 +78,16 @@ body {
 
 .heading-secondary {
   color: #333333;
-  font-size: 5rem;
-  text-transform: capitalize; }
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif; }
   .heading-secondary--main::after {
     content: '';
     border-bottom: 3px solid #ffa500;
     width: 10px;
     display: block;
-    margin: .5rem auto; }
+    margin: .5rem auto;
+    font-family: 'Raleway', sans-serif; }
   @media only screen and (max-width: 48em) {
     .heading-secondary--main {
       font-size: 3.5rem; } }
@@ -93,7 +96,7 @@ body {
       font-size: 2.5rem; } }
   .heading-secondary--main-white {
     color: #ffffff;
-    font-size: 5rem; }
+    font-size: 4rem; }
     .heading-secondary--main-white::after {
       content: '';
       border-bottom: 3px solid #ffa500;
@@ -110,7 +113,7 @@ body {
     color: #ffffff;
     font-size: 3rem; }
     .heading-secondary--white-large {
-      font-size: 5rem; }
+      font-size: 4rem; }
   .heading-secondary--dark {
     color: #333333;
     font-size: 3rem; }
@@ -136,13 +139,14 @@ body {
     text-align: center; }
   .heading-secondary--investor {
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 1rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
   color: #ffffff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Lora', serif; }
   .heading-tertiary--white {
     font-size: 2.6rem;
     color: #ffffff;
@@ -158,7 +162,7 @@ body {
     color: #333; }
   .heading-tertiary--about {
     color: #333333;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     text-transform: capitalize; }
   .heading-tertiary--team {
@@ -185,7 +189,7 @@ body {
 
 .paragraph {
   color: #333333;
-  font-size: 2.2rem; }
+  font-size: 2rem; }
   .paragraph--white {
     color: #ffffff;
     font-size: 2.2rem; }
@@ -265,7 +269,8 @@ body {
   font-weight: 700;
   box-shadow: inset 0 0.5px 0 0 #000000;
   transition: all .2s ease;
-  color: #ffffff; }
+  color: #ffffff;
+  white-space: nowrap; }
 
 .btn:hover {
   transform: translateY(-0.5rem);
@@ -586,6 +591,26 @@ body {
   margin-bottom: 2rem; }
 
 #e-form__model {
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  width: 14rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem; }
+
+#e-form__invest {
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  width: 14rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem; }
+
+#e-form__industry {
   margin-bottom: 1.5rem;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
@@ -1107,10 +1132,11 @@ body {
   .header__navigation-link {
     text-decoration: none;
     color: #333333;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: bold;
     transition: all .3s; }
     .header__navigation-link:hover {
       color: #ffa500; }
@@ -1301,7 +1327,7 @@ body {
 
 .section-hero {
   position: relative;
-  height: 75vh; }
+  height: 85vh; }
   @media only screen and (max-width: 36em) {
     .section-hero {
       height: 60vh; } }
@@ -1334,7 +1360,7 @@ body {
 
 */
 .section-about {
-  padding: 10rem 0 10rem; }
+  padding: 6rem 0 10rem; }
   .section-about--investor {
     background-color: #151515; }
   @media only screen and (max-width: 62em) {
@@ -1343,12 +1369,14 @@ body {
   @media only screen and (max-width: 48em) {
     .section-about--1 {
       padding: 2rem 0 10rem; } }
-  @media only screen and (max-width: 62em) {
-    .section-about--2 {
-      padding: 10rem 0 10rem; } }
-  @media only screen and (max-width: 48em) {
-    .section-about--2 {
-      padding: 10rem 0 2rem; } }
+  .section-about--2 {
+    padding: 10rem 0 10rem; }
+    @media only screen and (max-width: 62em) {
+      .section-about--2 {
+        padding: 10rem 0 10rem; } }
+    @media only screen and (max-width: 48em) {
+      .section-about--2 {
+        padding: 10rem 0 2rem; } }
   .section-about .about-image {
     width: 100%;
     height: 35rem; }
