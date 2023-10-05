@@ -81,7 +81,7 @@
 
                 <label for="e-form__age" class="e-form__label">age </label>
                 <p class="paragraph paragraph--e-form">Please provide your age.</p>
-                <input type="number" name="age" class="e-form__input" id="e-form__age" required>
+                <input type="text" name="age" class="e-form__input" id="e-form__age" required>
 
                 <label for="e-form__country" class="e-form__label">In which country are you situated? <sup>*</sup></label>
                 <select id="e-form__country" name="country" class="e-form__input" required>
@@ -338,7 +338,7 @@
 
                 <label for="e-form__phone" class="e-form__label">phone number <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide a phone number.</p>
-                <input type="number" name="Phone Number" class="e-form__input" id="e-form__phone" required>
+                <input type="number" name="email" class="e-form__input" id="e-form__phone" required>
 
                 <label for="e-form__company" class="e-form__label">company name? <sup>*</sup></label>
                 <input type="text" name="company name" class="e-form__input" id="e-form__company" required>
@@ -411,7 +411,7 @@
 
                 <label for="e-form__work" class="e-form__label">field of work <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide your field of work.</p>
-                <select id="e-form__work" name="field of work" class="e-form__input" value="Please Select" required>
+                <select id="e-form__work" name="Please provide your field of work" class="e-form__input" value="Please Select" required>
                     <option label="Please Select"  value>Please Select</option>
                     <option value="enterpreneur">Enterpreneur</option>
                     <option value="Government">Government</option>
@@ -424,7 +424,7 @@
 
                 <label for="e-form__field" class="e-form__label">work title <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide your field of work.</p>
-                <select id="e-form__field" name="your occupation" class="e-form__input" value="Please Select" required>
+                <select id="e-form__field" name="work title" class="e-form__input" value="Please Select" required>
                     <option label="Please Select"  value>Please Select</option>
                     <option value="Founder">Founder</option>
                     <option value="CEO">CEO</option>
@@ -433,13 +433,31 @@
 
                 </select>
 
-                <label for="e-form__url" class="e-form__label">what is your website URL?</label>
+                <label for="e-form__phone" class="e-form__label">what is your website URL?</label>
                 <p class="paragraph paragraph--e-form">Please provide your website URL.</p>
-                <input type="url" name="website URL" class="e-form__input" id="e-form__url" required>
+                <input type="url" name="what is your website URL?" class="e-form__input" id="e-form__phone" required>
 
                 <label for="e-form__revenue" class="e-form__label">Amount  willing to invest in Dollar <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide the amount you are willing to invest.</p>
-                <input type="number" name="Amount Willing To invest" class="e-form__input" id="e-form__revenue" required>
+                <input type="number" name="Amount  willing to invest in Dollar" class="e-form__input" id="e-form__revenue" required>
+
+                <label class="e-form__label">How did you hear about us? <sup>*</sup></label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Social Media (Linkedin, Twitter, Intagram)" name="How did you hear about us?"> 
+                    <label class="e-form__options">Social Media (Linkedin, Twitter, Intagram)</label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Investor Referral" name="How did you hear about us?">
+                    <label class="e-form__options">Investor Referral</label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Incubator/Accelerator/Hub Referral" name="How did you hear about us?"> 
+                    <label class="e-form__options">Incubator/Accelerator/Hub Referral</label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Google Search" name="How did you hear about us?"> 
+                    <label class="e-form__options">Google Search</label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Even" name="How did you hear about us?"> 
+                    <label class="e-form__options">Event</label> <br>
+                    <input type="radio" class="e-form__checkbox" value="Other" name="How did you hear about us?"> 
+                    <label class="e-form__options">Other</label> <br><br>
+
+                    <label for="e-form__job" class="e-form__label">Please tell us more details about how you heard about us</label>
+                    <p class="paragraph paragraph--e-form">If referral, please include name/organisation of referee. If event, please include event name</p>
+                    <textarea name="Please tell us more details about how you heard about us" id="e-form__elevator" cols="30" rows="10" class="e-form__textarea"></textarea>
 
                 <button type="submit" name="submit" class="e-form__button">submit</button>
             </form>
