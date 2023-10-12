@@ -75,16 +75,16 @@
 
                 <div class="e-form__group">
                     <label for="e-form__name" class="e-form__label">name <sup>*</sup></label>
-                    <input type="name" name="first_name" class="e-form__input e-form__input--name" id="e-form__name" required>
-                    <input type="name" name="second_name" class="e-form__input e-form__input--name" id="e-form__name" required>
+                    <input type="first name" name="first_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="First Name" required>
+                    <input type="second name" name="second_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="Second Name" required>
                 </div>
 
                 <label for="e-form__age" class="e-form__label">age </label>
                 <p class="paragraph paragraph--e-form">Please provide your age.</p>
-                <input type="text" name="age" class="e-form__input" id="e-form__age" required>
+                <input type="text" name="age" class="e-form__input" id="e-form__age" pattern="[a-zA-Z0-9]+" required>
 
                 <label for="e-form__country" class="e-form__label">In which country are you situated? <sup>*</sup></label>
-                <select id="e-form__country" name="country" class="e-form__input" required>
+                <select id="e-form__country" name="In which country are you situated?" class="e-form__input" required>
                     <option label="select an option"  value label>select an option</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -334,14 +334,14 @@
 
                 <label for="e-form__email" class="e-form__label">email <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide the best email where we can reach you.</p>
-                <input type="email" name="email" class="e-form__input" id="e-form__email" required>
+                <input type="email" name="email" class="e-form__input" id="e-form__email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
 
                 <label for="e-form__phone" class="e-form__label">phone number <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide a phone number.</p>
-                <input type="number" name="email" class="e-form__input" id="e-form__phone" required>
+                <input type="number" name="phone number" class="e-form__input" id="e-form__phone" required>
 
                 <label for="e-form__company" class="e-form__label">company name? <sup>*</sup></label>
-                <input type="text" name="company name" class="e-form__input" id="e-form__company" required>
+                <input type="text" name="company name" class="e-form__input" id="e-form__company" pattern="[a-zA-Z0-9]+" required>
 
                 <label for="e-form__industry" class="e-form__label">which industry best applies to your venture? <sup>*</sup></label>
                     <select id="e-form__industry" name="which industry best applies to your venture?" class="e-form__select" value="Select an option" required>
@@ -423,7 +423,7 @@
                 </select>
 
                 <label for="e-form__field" class="e-form__label">work title <sup>*</sup></label>
-                <p class="paragraph paragraph--e-form">Please provide your field of work.</p>
+                <p class="paragraph paragraph--e-form">work title</p>
                 <select id="e-form__field" name="work title" class="e-form__input" value="Please Select" required>
                     <option label="Please Select"  value>Please Select</option>
                     <option value="Founder">Founder</option>
@@ -435,7 +435,7 @@
 
                 <label for="e-form__phone" class="e-form__label">what is your website URL?</label>
                 <p class="paragraph paragraph--e-form">Please provide your website URL.</p>
-                <input type="url" name="what is your website URL?" class="e-form__input" id="e-form__phone" required>
+                <input type="url" name="what is your website URL?" class="e-form__input" id="e-form__phone" pattern="https?://.+" title="Include http://" required>
 
                 <label for="e-form__revenue" class="e-form__label">Amount  willing to invest in Dollar <sup>*</sup></label>
                 <p class="paragraph paragraph--e-form">Please provide the amount you are willing to invest.</p>
@@ -502,7 +502,7 @@
                     </h3>
 
                     <form action="https://getform.io/f/5ccb1eda-87bc-428f-8e44-dd7b30bfb53a" method="post">
-                        <input type="email" name="mailing list" placeholder="Enter your email address" class="footer__input">
+                        <input type="email" name="mailing list" placeholder="Enter your email address" class="footer__input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                         <button type="submit" class="footer__button">submit</button>
                     </form>
                 </div>

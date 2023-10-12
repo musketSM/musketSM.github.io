@@ -217,13 +217,13 @@
     
                     <div class="e-form__group">
                         <label for="e-form__name" class="e-form__label">what is your name? <sup>*</sup></label>
-                        <input type="name" name="first_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="First Name" required>
-                        <input type="name" name="second_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="Second Name" required>
+                        <input type="first name" name="first_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="First Name" required>
+                        <input type="second name" name="second_name" class="e-form__input e-form__input--name" id="e-form__name" placeholder="Second Name" required>
                     </div>
     
                     <label for="e-form__email" class="e-form__label">what is your email address <sup>*</sup></label>
                     <p class="paragraph paragraph--e-form">Please provide the best email where we can reach you.</p>
-                    <input type="email" name="email address" class="e-form__input" id="e-form__email" required>
+                    <input type="email" name="email address" class="e-form__input" id="e-form__email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
 
                     <label for="e-form__country" class="e-form__label">what is your nationality? <sup>*</sup></label>
                     <p class="paragraph paragraph--e-form">Please provide your country of origin.</p>
@@ -481,11 +481,11 @@
                     <input type="text" name="phone_number" class="e-form__input" id="e-form__phone" required>-->
 
                     <label for="e-form__company" class="e-form__label">what is the name of your venture <sup>*</sup></label>
-                    <input type="text" name="what is the name of your venture" class="e-form__input" id="e-form__company" required>
+                    <input type="text" name="what is the name of your venture" class="e-form__input" id="e-form__company" pattern="[a-zA-Z0-9]+" required>
 
                     <label for="e-form__phone" class="e-form__label">what is your website URL? <sup>*</sup></label>
                     <p class="paragraph paragraph--e-form">Please provide your website URL.</p>
-                    <input type="url" name="what is your website URL?" class="e-form__input" id="e-form__phone" required>
+                    <input type="url" name="what is your website URL?" class="e-form__input" id="e-form__phone" pattern="https?://.+" title="Include http://" required>
     
                     <label for="e-form__field" class="e-form__label">which category best applies to your venture? <sup>*</sup></label>
                     <select id="e-form__field" name="which category best applies to your venture?" class="e-form__select" value="Select an option" required>
@@ -547,7 +547,7 @@
                     </select>
     
                     <label for="e-form__job" class="e-form__label">What percentage of your venture is owned by African National(s)? <sup>*</sup></label>
-                    <input type="text" name="What percentage of your venture is owned by African National(s)?" class="e-form__input" id="e-form__job" required>
+                    <input type="text" name="What percentage of your venture is owned by African National(s)?" class="e-form__input" id="e-form__job" pattern="[a-zA-Z0-9]+" required>
 
                     <label for="e-form__model" class="e-form__label">Does your venture have a female founder, co-founder or C-level executive? <sup>*</sup></label>
                     <p class="paragraph paragraph--e-form">Diversity is important to us. Please let us know if there are any women on your founding/executive tea</p>
@@ -559,7 +559,7 @@
                     </select>
 
                     <label for="e-form__job" class="e-form__label">What percentage of your venture is owned by women? <sup>*</sup></label>
-                    <input type="text" name="percentage of your venture is owned by women? " class="e-form__input" id="e-form__job" required>
+                    <input type="text" name="percentage of your venture is owned by women? " class="e-form__input" id="e-form__job" pattern="[a-zA-Z0-9]+" required>
 
                     <label for="e-form__country" class="e-form__label">In which country is your venture headquartered? <sup>*</sup></label>
                 <select id="e-form__country" name="In which country is your venture headquartered?" class="e-form__input" required>
@@ -845,10 +845,10 @@
                     </select>
 
                     <label for="e-form__job" class="e-form__label">How much are you raising in USD? <sup>*</sup></label>
-                    <input type="text" name="How much are you raising in USD? " class="e-form__input" id="e-form__job" required>
+                    <input type="text" name="How much are you raising in USD? " class="e-form__input" id="e-form__job" pattern="[a-zA-Z0-9]+" required>
 
                     <label for="e-form__job" class="e-form__label">How many months of runway will this amount give you? <sup>*</sup></label>
-                    <input type="text" name="How many months of runway will this amount give you?" class="e-form__input" id="e-form__job" required>
+                    <input type="text" name="How many months of runway will this amount give you?" class="e-form__input" id="e-form__job" pattern="[a-zA-Z0-9]+" required>
 
                     <label for="e-form__model" class="e-form__label">Has your venture raised external funding till date?  <sup>*</sup></label>
                     <select id="e-form__model" name="Has your venture raised external funding till date?  " class="e-form__select" value="Select an option" required>
@@ -890,7 +890,8 @@
 
                     <label for="e-form__job" class="e-form__label">Link(s) to demo or other relevant documents.</label>
                     <p class="paragraph paragraph--e-form">Please include links to any relevant documents or materials for us to better understand your venture</p>
-                    <textarea name=">Link(s) to demo or other relevant documents." id="e-form__elevator" cols="30" rows="10" class="e-form__textarea"></textarea>
+                    <textarea name=">Link(s) to demo or other relevant documents.
+                        " id="e-form__elevator" cols="30" rows="10" class="e-form__textarea"></textarea>
 
                     <label class="e-form__label">How did you hear about us? <sup>*</sup></label> <br>
                     <input type="radio" class="e-form__checkbox" value="Social Media (Linkedin, Twitter, Intagram)" name="How did you hear about us?"> 
@@ -962,7 +963,7 @@
                     </h3>
 
                     <form action="https://getform.io/f/5ccb1eda-87bc-428f-8e44-dd7b30bfb53a" method="post">
-                        <input type="email" name="mailing list" placeholder="Enter your email address" class="footer__input">
+                        <input type="email" name="mailing list" placeholder="Enter your email address" class="footer__input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                         <button type="submit" class="footer__button">submit</button>
                     </form>
                 </div>
