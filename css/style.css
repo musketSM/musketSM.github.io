@@ -517,7 +517,8 @@ body {
       padding: 3rem 4rem 6rem 4rem;
       width: 100%; }
   .blog__content-info {
-    width: 60%; }
+    width: 100%;
+    padding: 0 0 0 5rem; }
     .blog__content-info-heading {
       font-size: 2.4rem;
       color: #333333;
